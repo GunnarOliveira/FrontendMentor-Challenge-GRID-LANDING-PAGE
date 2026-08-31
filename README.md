@@ -20,13 +20,12 @@
 ![Desktop menu active](./screenshots-preview/desktop-menu-active-layout.png)
 
 ### iPad
+![iPad menu active](./screenshots-preview/mobile-menu-active-layout.png)
 
-![iPad menu active](./screenshots-preview/ipad-menu-active-layout.png)
 
 ### Mobile
 
-![Mobile menu active](./screenshots-preview/mobile-menu-active-layout.png)
-
+![Mobile menu active](./screenshots-preview/ipad-menu-active-layout.png)
 ---
 
 ## 📜 About the Project
