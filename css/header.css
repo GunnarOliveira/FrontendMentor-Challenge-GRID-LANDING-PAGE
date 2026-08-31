@@ -60,11 +60,6 @@ header {
 .menu-item a {
   padding: 10px;
 }
-/* @media (max-width: 750px) {
-  .menu-item a {
-    font-size: 1.5rem;
-  }
-} */
 .menu-item a:after {
   content: "";
   display: block;
