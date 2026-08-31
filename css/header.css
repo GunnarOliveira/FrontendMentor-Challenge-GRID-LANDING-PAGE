@@ -1,0 +1,96 @@
+header {
+  position: relative;
+  align-self: start;
+  grid-area: header;
+  z-index: 10;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  padding: 15px 40px;
+  border-bottom: 2px solid var(--primary-color-2);
+  background: var(--primary-color-3);
+}
+@media (max-width: 750px) {
+  .header {
+    padding: 15px 30px;
+  }
+}
+.header .logo {
+  color: var(--primary-color-1);
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header .logo::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--neutral-color-1);
+}
+
+.menu {
+  width: 400px;
+  background: var(--primary-color-3);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  height: calc(100vh - 100%);
+  padding: 50px;
+  text-align: right;
+  display: none;
+  transition: 0.2s;
+  z-index: 10;
+}
+@media (max-width: 750px) {
+  .menu {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 25px;
+  }
+}
+.menu-item a {
+  padding: 10px;
+}
+/* @media (max-width: 750px) {
+  .menu-item a {
+    font-size: 1.5rem;
+  }
+} */
+.menu-item a:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+}
+.menu-item a:hover:after {
+  background: var(--primary-color-1);
+}
+label {
+  display: block;
+  width: 24px;
+  height: 16px;
+  padding: 20px;
+  background: url("../assets/images/icon-menu.svg") no-repeat center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.menu-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.menu-toggle:checked ~ label {
+  background: url("../assets/images/icon-close.svg") no-repeat center;
+}
+header:has(.menu-toggle:checked) .menu {
+  display: block;
+}
